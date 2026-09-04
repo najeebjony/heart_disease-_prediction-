@@ -1,0 +1,153 @@
+{
+    "champion_model": "Random Forest",
+    "metrics": [
+        {
+            "Model": "Logistic Regression",
+            "Accuracy": 0.8689,
+            "Precision": 0.8125,
+            "Recall": 0.9286,
+            "F1-Score": 0.8667,
+            "ROC-AUC": 0.9513,
+            "CV_Accuracy_Mean": 0.8264,
+            "CV_Accuracy_Std": 0.0172,
+            "Composite_Score": 2.6869
+        },
+        {
+            "Model": "Random Forest",
+            "Accuracy": 0.918,
+            "Precision": 0.871,
+            "Recall": 0.9643,
+            "F1-Score": 0.9153,
+            "ROC-AUC": 0.9502,
+            "CV_Accuracy_Mean": 0.8055,
+            "CV_Accuracy_Std": 0.0266,
+            "Composite_Score": 2.7835
+        },
+        {
+            "Model": "XGBoost",
+            "Accuracy": 0.9016,
+            "Precision": 0.8438,
+            "Recall": 0.9643,
+            "F1-Score": 0.9,
+            "ROC-AUC": 0.9502,
+            "CV_Accuracy_Mean": 0.8058,
+            "CV_Accuracy_Std": 0.0246,
+            "Composite_Score": 2.7518000000000002
+        },
+        {
+            "Model": "AdaBoost",
+            "Accuracy": 0.8852,
+            "Precision": 0.8387,
+            "Recall": 0.9286,
+            "F1-Score": 0.8814,
+            "ROC-AUC": 0.961,
+            "CV_Accuracy_Mean": 0.8389,
+            "CV_Accuracy_Std": 0.02,
+            "Composite_Score": 2.7276
+        }
+    ],
+    "confusion_matrices": {
+        "Logistic Regression": [
+            [
+                27,
+                6
+            ],
+            [
+                2,
+                26
+            ]
+        ],
+        "Random Forest": [
+            [
+                29,
+                4
+            ],
+            [
+                1,
+                27
+            ]
+        ],
+        "XGBoost": [
+            [
+                28,
+                5
+            ],
+            [
+                1,
+                27
+            ]
+        ],
+        "AdaBoost": [
+            [
+                28,
+                5
+            ],
+            [
+                2,
+                26
+            ]
+        ]
+    },
+    "feature_importances": {
+        "Logistic Regression": {
+            "age": 0.1032,
+            "sex": 0.6556,
+            "cp": 0.5435,
+            "trestbps": 0.3137,
+            "chol": 0.2154,
+            "fbs": 0.2206,
+            "restecg": 0.2173,
+            "thalach": 0.3485,
+            "exang": 0.3836,
+            "oldpeak": 0.15,
+            "slope": 0.3541,
+            "ca": 1.1079,
+            "thal": 0.6778
+        },
+        "Random Forest": {
+            "age": 0.0773,
+            "sex": 0.0408,
+            "cp": 0.1347,
+            "trestbps": 0.0708,
+            "chol": 0.0624,
+            "fbs": 0.008,
+            "restecg": 0.0165,
+            "thalach": 0.115,
+            "exang": 0.0613,
+            "oldpeak": 0.0888,
+            "slope": 0.0468,
+            "ca": 0.1133,
+            "thal": 0.1642
+        },
+        "XGBoost": {
+            "age": 0.0455,
+            "sex": 0.0666,
+            "cp": 0.1335,
+            "trestbps": 0.0369,
+            "chol": 0.0356,
+            "fbs": 0.0213,
+            "restecg": 0.0431,
+            "thalach": 0.0426,
+            "exang": 0.0743,
+            "oldpeak": 0.0585,
+            "slope": 0.0519,
+            "ca": 0.0901,
+            "thal": 0.3002
+        },
+        "AdaBoost": {
+            "age": 0.0163,
+            "sex": 0.0859,
+            "cp": 0.1609,
+            "trestbps": 0.0561,
+            "chol": 0.0436,
+            "fbs": 0.0,
+            "restecg": 0.0157,
+            "thalach": 0.0728,
+            "exang": 0.0387,
+            "oldpeak": 0.1081,
+            "slope": 0.0487,
+            "ca": 0.1772,
+            "thal": 0.1761
+        }
+    }
+}
