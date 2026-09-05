@@ -94,8 +94,12 @@ st.markdown("""
 # -----------------------------------------------------------------------------
 # 2. Helper Functions & Model Loader
 # -----------------------------------------------------------------------------
-MODEL_PATH = os.path.join("models", "heart_disease_model.pkl")
-DATA_PATH = os.path.join("data", "heart.csv")
+# MODEL_PATH = os.path.join("models", "heart_disease_model.pkl")
+# DATA_PATH = os.path.join("data", "heart.csv")
+BASE_DIR = os.path.dirname(__file__)
+
+# Folder ka naam ("models") hata diya hai kyunke file direct root par hai
+MODEL_PATH = os.path.join(BASE_DIR, "heart_disease_model.pkl")
 
 @st.cache_resource
 def load_model_bundle():
